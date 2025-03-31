@@ -15,8 +15,21 @@ import os
 import dj_database_url
 import os
 
+# DATABASES = {
+#     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+# }
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'VWjrwUTLCYUXKmucuYbBtNvBVqcBjyOw',
+        'HOST': 'gondola.proxy.rlwy.net',
+        'PORT': '37612',
+        'OPTIONS': {
+            'sslmode': 'require',  # Включает SSL для безопасного соединения
+        },
+    }
 }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
