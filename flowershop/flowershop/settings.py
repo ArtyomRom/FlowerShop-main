@@ -44,10 +44,9 @@ SECRET_KEY = "django-insecure-zxepi6kd31ez^jj-+gsdh-x7a31y02(t8%+kwls%aufn7wn^+e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['flowershop-347a.onrender.com', 'www.flowershop-347a.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['flowershop-347a.onrender.com', 'www.flowershop-347a.onrender.com', 'localhost', '127.0.0.1', "flowershop-main-1.onrender.com"]
 
-CSRF_TRUSTED_ORIGINS = ['https://flowershop-347a.onrender.com']
- 
+
 CSRF_COOKIE_SECURE = False
 CSRF_COOKIE_HTTPONLY = False
 
@@ -146,3 +145,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CSRF_TRUSTED_ORIGINS = ["https://flowershop-main-1.onrender.com"]
